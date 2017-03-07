@@ -1,11 +1,11 @@
-var router = require('koa-router')();
+var router = require('koa-router')()
 
-router.get('/', async function (ctx, next) {
+router.get('/', async (ctx, next) => {
   ctx.state = {
     title: 'koa2 title'
-  };
+  }
 
   await ctx.render('index', {
-  });
+  })
 })
-module.exports = router;
+module.exports = router
